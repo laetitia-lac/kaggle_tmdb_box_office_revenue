@@ -1,8 +1,8 @@
 import ast
 import pandas as pd
 
-from src import tools
-from utils import constants
+from src.core import tools
+from src.utils import constants
 
 
 class OneHotEncodingColumn:

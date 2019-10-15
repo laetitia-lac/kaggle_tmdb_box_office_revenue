@@ -3,8 +3,8 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import cross_val_score, GridSearchCV, RandomizedSearchCV
 
-from src import tools
-from utils.logger import logger
+from src.core import tools
+from src.utils.logger import logger
 
 
 def cross_validate_model(training_df: pd.DataFrame, rf: RandomForestRegressor) -> None:

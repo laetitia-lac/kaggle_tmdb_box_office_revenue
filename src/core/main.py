@@ -1,9 +1,9 @@
 from sklearn.ensemble import RandomForestRegressor
 
-from src import pipeline_loading, tools
-from src.pipeline_transforming import PipelineTransforming
-from utils import constants
-from utils.logger import logger
+from src.core import pipeline_loading, tools
+from src.core.pipeline_transforming import PipelineTransforming
+from src.utils import constants
+from src.utils.logger import logger
 
 # parameters
 mode = 'produce_submission_result'
@@ -16,7 +16,8 @@ parameters_rf = {'n_estimators': 25, 'random_state': 42}
 if __name__ == '__main__':
     # EXTRACTING
     label_column = 'revenue'
-    original_training_df = tools.get_df_from_csv(constants.path_training_file)[[constants.label_column] + constants.columns_to_process]
+    original_training_df = tools.get_df_from_csv(constants.path_training_file)[[
+                                                                                   constants.label_column] + constants.columns_to_process]
     original_testing_df = tools.get_df_from_csv(constants.path_testing_file)[constants.columns_to_process]
 
     # TRANSFORMING
