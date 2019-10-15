@@ -1,0 +1,16 @@
+certifi==2019.9.11
+feedparser==5.2.1
+feedstail==0.5.1
+joblib==0.14.0
+numpy==1.17.2
+pandas==0.25.1
+plotly==3.4.2
+python-dateutil==2.8.0
+pytz==2019.2
+retrying==1.3.3
+scikit-learn==0.21.3
+scipy==1.3.1
+six==1.12.0
+sklearn==0.0
+umap-learn==0.3.7
+wincertstore==0.2
