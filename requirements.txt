@@ -1,7 +1,7 @@
 certifi==2019.9.11
 feedparser==5.2.1
 feedstail==0.5.1
-joblib==0.14.0
+joblib==1.2.0
 numpy==1.17.2
 pandas==0.25.1
 plotly==3.4.2
