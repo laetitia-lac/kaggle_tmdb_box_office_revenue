@@ -1,4 +1,4 @@
-certifi==2019.9.11
+certifi==2022.12.7
 feedparser==5.2.1
 feedstail==0.5.1
 joblib==0.14.0
